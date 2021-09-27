@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>online store</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/onlineStyle.css" />
+  </head>
+
+  <body id="body">
+    <header id="header" class="myheader">
+      <h1 id="website">Courses4Arab</h1>
+
+      <nav>
+        <ul class="parent">
+          <li>
+            <a href="https://courses4arab.com/#available-courses">
+              ALL Courses
+            </a>
+          </li>
+          <li><a href="8-slider.html"> 8, 9, 10 & 11 </a></li>
+          <li id="dark" class="mode">change mode</li>
+          <li id="changecolor">
+            change color
+
+            <ul id="hiddenul" style="display: none">
+              <li id="headerbg">Header BG</li>
+              <li id="titlebg">Title BG</li>
+              <li id="titlecolor">Title color</li>
+              <li id="sectionbg">section BG</li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>online store &#128525;</h1>
+
+        <div class="parent-of-cards">
+          <div class="card" style="width: 18rem">
+            <img src="photo/1.jfif" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Black T-shirt</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+
+              <div style="display: flex; justify-content: space-between">
+                <button class="btn">buy</button>
+                <div class="price">$10</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem">
+            <img src="photo/2.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Gray T-shirt</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <button class="btn btn-primary">buy</button>
+                <div class="price">$15</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem">
+            <img src="photo/3.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Blue T-shirt</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <div style="display: flex; justify-content: space-between">
+                <button class="btn btn-primary">buy</button>
+                <div class="price">$20</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem">
+            <img src="photo/4.jfif" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Sleeve T-shirt</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <div style="display: flex; justify-content: space-between">
+                <button class="btn btn-primary">buy</button>
+                <div class="price">$5</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div dir="rtl" id="blackScreen" class="back-screen">
+        <div class="close" id="close">&#10006;</div>
+
+        <article id="allProducts" class="all-products">
+          <!-- <div dir="rtl" class="item-container">
+            <div class="img-title-parent">
+              <img src="photo/4.jfif" alt="" />
+              <p class="product-name">Blue T-shirt</p>
+            </div>
+
+            <div class="salary">
+              <input
+                type="number"
+                value="1"
+                min="1"
+                class="input-quantity"
+                dir="ltr"
+                id="input-quantity"
+              />
+              <p>الكمية</p>
+            </div>
+
+            <div class="price">$20</div>
+
+            <div class="btn">حذف</div>
+          </div> -->
+        </article>
+
+        <article dir="rtl" class="confirm-buy">
+          <div>
+            <p>المجموع</p>
+            <p id="totalPrice">$0</p>
+          </div>
+
+          <button id="danger" class="btn btn-danger">تنفيذ عملية الشراء</button>
+        </article>
+      </div>
+    </main>
+    <script src="javascript/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+.parent-of-cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px auto;
+}
+
+.card img {
+  width: 75%;
+  margin: 10px auto;
+  height: 60%;
+}
+
+.price {
+  color: #f00;
+  font-size: 20px;
+}
+
+.card-text {
+  margin: 10px 0;
+  color: #555;
+}
+
+.btn {
+  padding: 8px 20px;
+  border: none;
+  background-color: teal;
+  color: #fff;
+  border-radius: 8px;
+  width: 25%;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.back-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #282a35;
+  color: #fff;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  z-index: 999999;
+}
+
+.item-container {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  padding: 5px 15px;
+  border-bottom: 5px solid teal;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  height: 20%;
+}
+
+.img-title-parent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.img-title-parent img {
+  width: 75px;
+}
+
+.item-container .salary{
+  display: flex; 
+  align-items: center"
+}
+
+.item-container input[type="number"] {
+  width: 50px;
+  border: 1px solid teal;
+  border-radius: 8px;
+  padding: 5px;
+  outline: none;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.item-container p {
+  color: rgba(0, 0, 0, 1);
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.item-container .btn {
+  width: 75px;
+  text-align: center;
+  background-color: brown;
+}
+
+.back-screen .confirm-buy p {
+  margin: 10px auto;
+}
+
+.back-screen .confirm-buy .btn {
+  margin-top: 20px;
+}
+.back-screen .close {
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.back-screen .close:hover {
+  transform: rotate(360deg);
+  color: teal;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
+.show-items {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: teal;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 20px;
+  right: 40%;
+  background-color: teal;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  text-align: center;
+  width: 15%;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}

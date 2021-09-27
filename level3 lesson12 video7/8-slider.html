@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8- SLIESHOW</title>
+    <link rel="stylesheet" href="icomoon/style.css" />
+    <link rel="stylesheet" href="prism/prism.css" />
+    <script src="prism/prism.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="javascript/main.js"></script>
+    <script defer src="javascript/8-slider.js"></script>
+    <script defer src="javascript/9-toggle-tabs.js"></script>
+    <script defer src="javascript/10-form-validation.js"></script>
+    <script defer src="javascript/11-tootstrap.js"></script>
+  </head>
+
+  <body class="line-numbers" id="body">
+    <header id="header" class="myheader">
+      <h1 id="website">
+        <a style="color: #fff; text-decoration: none" href="index.html">
+          Courses4Arab
+        </a>
+      </h1>
+
+      <nav>
+        <ul class="parent">
+          <li>
+            <a href="12-online-store.html"> online store </a>
+          </li>
+          <li><a href="8-slider.html"> 8, 9, 10 & 11 </a></li>
+          <li id="dark" class="mode">change mode</li>
+          <li id="changecolor">
+            change color
+
+            <ul id="hiddenul" style="display: none">
+              <li id="headerbg">Header BG</li>
+              <li id="titlebg">Title BG</li>
+              <li id="titlecolor">Title color</li>
+              <li id="sectionbg">section BG</li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section>
+        <h1>11- TOOTstap</h1>
+
+        <div class="myflex">
+          <article class="divcontainer">
+            <a class="focus-a" href="#">
+              <div class="course-box html-box">
+                <div class="number-box number-red">
+                  <span class="num"> 1 </span>
+                </div>
+
+                <h2 lang="ar" dir="rtl" class="html-course course-title">
+                  كورس HTML كامل
+                </h2>
+
+                <p lang="ar" dir="rtl" class="click">
+                  كورس HTML رايق
+                  <span role="img"> &#128525; </span>
+                </p>
+
+                <div class="html-container last-two-parts">
+                  <span dir="ltr" class="mark"> &lt; &nbsp; /&gt; </span>
+                  <h4 class="html-logo bottom-course">HTML</h4>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <details>
+          <summary lang="ar" dir="rtl">الحصول على أكواد الــ HTML</summary>
+
+          <article class="allcodes line-numbers">
+            <div class="our-lang">HTML</div>
+            <button class="copy">copy</button>
+            <pre><code class="language-html">&lt;article class=&quot;divcontainer&quot;&gt;
+      &lt;a  href=&quot;#&quot;&gt;
+         &lt;div class=&quot;course-box html-box&quot;&gt;
+            &lt;div class=&quot;number-box number-html&quot;&gt;
+               &lt;span class=&quot;num&quot;&gt; 1 &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;h2 lang=&quot;ar&quot; dir=&quot;rtl&quot; class=&quot;html-course course-title&quot;&gt;
+               كورس HTML كامل
+            &lt;/h2&gt;
+            &lt;p lang=&quot;ar&quot; dir=&quot;rtl&quot; class=&quot;click&quot;&gt;
+               كورس HTML رايق
+               &lt;span role=&quot;img&quot;&gt; &amp;#128525; &lt;/span&gt;
+            &lt;/p&gt;
+            &lt;div class=&quot;html-container last-two-parts&quot;&gt;
+               &lt;span dir=&quot;ltr&quot; class=&quot;mark&quot;&gt; &amp;lt; &amp;nbsp; /&amp;gt; &lt;/span&gt;
+               &lt;h4 class=&quot;html-logo bottom-course&quot;&gt;HTML&lt;/h4&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/a&gt;
+   &lt;/article&gt;</code></pre>
+          </article>
+        </details>
+
+        <details>
+          <summary lang="ar" dir="rtl">الحصول على أكواد الــ CSS</summary>
+          <article class="allcodes line-numbers">
+            <div class="our-lang">CSS</div>
+            <button class="copy">copy</button>
+            <pre><code class="language-css">:root {
+      --yourColor: #ea336a;
+    }
+    
+    * {
+      text-decoration: none;
+      font-family: sans-serif;
+    }
+    
+    .divcontainer {
+      margin-top: 50px;
+    }
+    
+    .myflex {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .number-box {
+      text-align: center;
+      padding: 14px 0;
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+      width: 20rem;
+    }
+    
+    .number-html {
+      background-color: var(--yourColor);
+    }
+    
+    .num {
+      color: #fff;
+      border: 3px solid #fff;
+      padding: 2px 8px;
+    }
+    
+    .html-course {
+      color: var(--yourColor);
+    }
+    
+    .course-title {
+      font-size: 1.7rem;
+      padding: 30px 0 15px 0;
+    }
+    
+    p.click {
+      color: var(--yourColor);
+      font-size: 1.7rem;
+      font-weight: bold;
+      display: none;
+      color: #fff;
+      transform: translateY(-40px);
+    }
+    
+    .course-box:hover p.click {
+      display: block;
+    }
+    
+    .course-box:hover .mark {
+      display: none;
+    }
+    
+    .html-logo {
+      background-color: var(--yourColor);
+    }
+    
+    .bottom-course {
+      color: white;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      padding: 4px 0;
+      margin-top: 19px;
+      border-top: 3px solid #fff;
+    }
+    
+    .mark {
+      font-size: 3.2rem;
+      height: 50px;
+      display: block;
+    }
+    
+    .dark .course-box,
+    .dark .course-title,
+    .dark .last-two-parts {
+      background-color: aliceblue;
+    }
+    
+    .html-container {
+      color: var(--yourColor);
+    }
+    
+    .last-two-parts {
+      font-weight: bolder;
+      font-size: 2.5rem;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      padding-top: 20px;
+    }
+    
+    .dark .course-box:hover .course-title,
+    .dark .course-box:hover .last-two-parts {
+      background-color: inherit;
+    }
+    
+    .html-box:hover {
+      background-color: var(--yourColor);
+      box-shadow: 0 7px 93px 0 rgba(255, 131, 131, 0.47);
+    }
+    
+    .dark .html-box:hover {
+      background-color: var(--yourColor);
+    }
+    
+    .course-box {
+      border-radius: 8px;
+      box-shadow: 0 0 4px 0 rgba(17, 22, 26, 0.16), 0 2px 4px 0 rgba(17, 22, 26, 0.08), 0 4px 8px 0 rgba(17, 22, 26, 0.08);
+      transition: all 0.4s;
+      text-align: center;
+    }
+    
+    .course-box:hover {
+      animation-name: fade-down;
+      animation-duration: 0.5s;
+    }
+    
+    @keyframes fade-down {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translate(0);
+      }
+    }
+    
+    @media (max-width: 688px) {
+      .dark .number-box {
+        background-color: aliceblue;
+      }
+      .last-two-parts {
+        padding-top: 0;
+      }
+      .mark {
+        display: none;
+      }
+      .number-box {
+        width: 17rem;
+        background-color: #fff;
+      }
+      .number-html .num {
+        color: var(--yourColor);
+        border-color: var(--yourColor);
+      }
+      .course-box:hover .number-html {
+        background-color: var(--yourColor);
+      }
+      .course-box:hover .num {
+        color: #fff;
+        border-color: white;
+      }
+      .number-html {
+        border-top: 7px solid var(--yourColor);
+      }
+    }</code></pre>
+          </article>
+        </details>
+      </section>
+
+      <section>
+        <h1>10- validation form</h1>
+
+        <div style="text-align: center; margin-top: 50px">
+          <button id="createAccount" style="opacity: 1" class="mybtn">
+            Create account
+          </button>
+        </div>
+
+        <div id="papaForm" class="parent-of-form">
+          <form id="form" action="action_page.php">
+            <div style="position: relative" class="form-container">
+              <h2 style="text-align: center">Create Account</h2>
+              <div id="close">&#10006;</div>
+
+              <div class="papa">
+                <label for="username"><b>Username</b></label>
+                <input
+                  id="username"
+                  type="text"
+                  placeholder="Enter Username"
+                  name="email"
+                  required
+                />
+                <div class="icon-check-circle"></div>
+                <p id="usermessage">at least 3 character</p>
+              </div>
+
+              <div class="papa">
+                <label for="email"><b>Email</b></label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="Enter Email"
+                  name="email"
+                  required
+                />
+                <div class="icon-check-circle"></div>
+                <p id="emailmessage">Please enter a correct email address</p>
+              </div>
+
+              <div class="papa">
+                <label for="psw"><b>Password</b></label>
+                <input
+                  id="psw"
+                  type="password"
+                  placeholder="Enter Password"
+                  name="psw"
+                  required
+                />
+                <div class="icon-check-circle"></div>
+                <p id="pswmessage">
+                  Password must be at least 8 characters with 1 upper case
+                  letter and 1 number.
+                </p>
+              </div>
+
+              <div class="papa">
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input
+                  id="pswrepeat"
+                  type="password"
+                  placeholder="Repeat Password"
+                  name="psw-repeat"
+                  required
+                />
+                <div class="icon-check-circle"></div>
+                <p id="repeatmessage">Please make sure your passwords match</p>
+              </div>
+
+              <button id="regbtn" disabled type="submit" class="registerbtn">
+                Register
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section>
+        <h1>9- toggle tabs</h1>
+
+        <div class="alltabs">
+          <button class="mybtn active-btn">Finland</button>
+
+          <button class="mybtn">Denmark</button>
+
+          <button class="mybtn">Switzerland</button>
+        </div>
+
+        <div class="parent-of-article">
+          <article class="fun-facts active-article">
+            <h2>4 Fun Facts About Finland</h2>
+
+            <ol>
+              <li>Finland is the world's happiest country</li>
+              <li>Finns are the world's biggest coffee drinkers</li>
+              <li>There are 187,888 lakes in Finland</li>
+              <li>Most Finnish children have two birthday parties</li>
+            </ol>
+          </article>
+
+          <article class="fun-facts">
+            <h2>3 Fun Facts About Denmark</h2>
+
+            <ol>
+              <li>Denmark is the second happiest country in the world</li>
+              <li>Denmark has 444 islands</li>
+              <li>Denmark has The oldest flag in the world</li>
+            </ol>
+          </article>
+
+          <article class="fun-facts">
+            <h2>5 Fun Facts About Switzerland</h2>
+
+            <ol>
+              <li>Switzerland is the third happiest country in the world</li>
+              <li>They Make & Eat a Lot of Chocolate</li>
+              <li>Switzerland Has 7000 Lakes</li>
+              <li>25% of the Population Is Foreign</li>
+              <li>One of the Most Expensive Places to Live In</li>
+            </ol>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h1>8 - Slider || Slideshow</h1>
+
+        <div id="slidercontainer" class="slider-container"></div>
+
+        <div class="num-container">
+          <button id="pre">&lt; pre</button>
+
+          <div class="numbers">
+            <button class="mynumber active-num">1</button>
+            <button class="mynumber">2</button>
+            <button class="mynumber">3</button>
+            <button class="mynumber">4</button>
+            <button class="mynumber">5</button>
+          </div>
+
+          <button id="next">next &gt;</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

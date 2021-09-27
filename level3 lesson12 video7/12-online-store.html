@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online store</title>
+    <link rel="stylesheet" href="icomoon/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="store.css">
+    <script defer src="javascript/12-online-store.js"></script>
+    <script defer src="javascript/main.js"></script>
+</head>
+
+<body id="body">
+    <header id="header" class="myheader">
+        <h1 id="website">Courses4Arab</h1>
+
+        <nav>
+            <ul class="parent">
+                <li>
+                    <a href="https://courses4arab.com/#available-courses">
+                        ALL Courses
+                    </a>
+                </li>
+                <li><a href="8-slider.html"> 8, 9, 10 & 11 </a></li>
+                <li id="dark" class="mode">change mode</li>
+                <li id="changecolor">
+                    change color
+
+                    <ul id="hiddenul" style="display: none">
+                        <li id="headerbg">Header BG</li>
+                        <li id="titlebg">Title BG</li>
+                        <li id="titlecolor">Title color</li>
+                        <li id="sectionbg">section BG</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <!-- 
+          <section   id="sec">
+            <h1>أنا مين ؟</h1>
+      
+            <div class="flex">
+              <article class="left-section">
+                <h3>هدفى</h3>
+      
+                <p>
+                  هو إِثراء المُحتوى العربى بمحتوى تعليمى مُتميز عن طريق
+                  <br />
+                  التعليم القائم على المشاريع
+                </p>
+      
+                <a id="you" class="youtube" href="https://www.w3schools.com/jsref/obj_event.asp">
+                  youtube
+                </a>
+      
+                <a class="facebook" href=""> facebook </a>
+              </article>
+      
+              <article class="right-section">
+                <img class="my-img" src="me-28dd1fbca7dfd2d37a8358163c6f9677.png" alt="" />
+      
+                <h5>Ali Hassan</h5>
+      
+                <p class="para">انا الي ضاع من عُمري سنين</p>
+              </article>
+            </div>
+          </section>
+       -->
+
+
+        <section>
+            <h1>online store
+
+
+                &#128525;
+            </h1>
+
+
+            <div class="parent-of-cards">
+                <div class="card" style="width: 18rem;">
+                    <img src="T-shirts/1.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Black T-shirt</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+
+                        <div style="display: flex; justify-content: space-between;">
+                            <button class="btn btn-primary">buy</button>
+                            <div class="price">$10</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="T-shirts/2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Gray T-shirt</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <button class="btn btn-primary">buy</button>
+                            <div class="price">$15</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card" style="width: 18rem;">
+                    <img src="T-shirts/3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Blue T-shirt</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <div style="display: flex; justify-content: space-between;">
+                            <button class="btn btn-primary">buy</button>
+                            <div class="price">$20</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card" style="width: 18rem;">
+                    <img src="T-shirts/4.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sleeve T-shirt</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <div style="display: flex; justify-content: space-between;">
+                            <button class="btn btn-primary">buy</button>
+                            <div class="price">$5</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div dir="rtl" id="blackScreen" class="back-screen">
+            <div style="color: white;" id="close"> &#10006; </div>
+
+
+
+            <article id="allProducts" class="all-products">
+
+            </article>
+            
+
+
+
+
+            <article dir="rtl" class="confirm-buy">
+                <div>
+                    <p>المجموع</p>
+                    <p id="totalPrice">$0</p>
+                </div>
+                
+
+                <button id="danger" class="btn btn-danger">تنفيذ عملية الشراء</button>
+            </article>
+
+        </div>
+
+
+    </main>
+ 
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #352f5b;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  background-image: linear-gradient(to top, #352f5b, rgba(255, 255, 255, 0.2));
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.task {
+  padding: 15px;
+  width: 50%;
+  margin: 50px auto;
+  background-color: rgba(106, 95, 177, 0.51);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  border-bottom: 3px solid #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 20px;
+}
+
+i {
+  cursor: pointer;
+}
+
+.icon {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.icon .fa-frown,
+.icon .fa-heart {
+  margin-left: 10px;
+}
+
+.icon .fa-heart {
+  color: red;
+}
+
+.fa-star.active {
+  color: yellow;
+}
+
+.fa-star:hover,
+.icon .fa-frown {
+  color: yellow;
+}
+
+.task p.love {
+  text-decoration: line-through;
+}
+
+form {
+  width: 50%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+form input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  text-align: center;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+form i {
+  font-size: 30px;
+  padding: 15px;
+}
