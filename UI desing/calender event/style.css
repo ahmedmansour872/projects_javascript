@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.box-left {
+  background-color: #212329;
+  color: #fff;
+  padding: 5px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  position: relative;
+  margin-right: 50px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  cursor: pointer;
+}
+
+.box-left:hover::before {
+  animation: op 1s ease-in-out forwards;
+  -webkit-animation: op 1s ease-in-out forwards;
+}
+
+.box-left:hover + .box-right,
+.box-right:hover {
+  animation: op 1s ease-in-out forwards;
+  -webkit-animation: op 1s ease-in-out forwards;
+}
+
+.box-left::before {
+  opacity: 0;
+  content: "";
+  border: 15px solid transparent;
+  border-right-color: #212329;
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.box-left .month {
+  font-size: 10px;
+  margin-top: 8px;
+}
+
+.box-left .day {
+  font-size: 22px;
+  margin-top: 3px;
+}
+
+.box-right {
+  width: 20%;
+  background-color: #212329;
+  color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  opacity: 0;
+  font-size: 15px;
+}
+
+@keyframes op {
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.box-right h3 {
+  font-size: 15px;
+}
+
+.box-right .date {
+  font-size: 12px;
+  margin: 8px 0;
+}
+
+.box-right .zoom {
+  background-color: #0b4646;
+  border-radius: 20px;
+  padding: 5px 10px;
+  display: inline-block;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin: 10px 0;
+}
+
+.box-right .meeting_info {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.box-right .attendees {
+  margin-bottom: 8px;
+}
+
+.box-right ul {
+  list-style: none;
+}
+
+.box-right ul li {
+  margin: 10px 0 10px 30px;
+  position: relative;
+}
+
+.box-right ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -30px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.box-right ul li span {
+  margin-left: -25px;
+  padding-right: 10px;
+  font-size: 13px;
+}

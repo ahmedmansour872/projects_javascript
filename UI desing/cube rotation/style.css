@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.shadowContainer,
+.actualCubeContainer {
+  perspective: 800px;
+  perspective-origin: 50% 100px;
+  -webkit-perspective: 800px;
+  -webkit-perspective-origin: 50% 100px;
+}
+
+.cubeFaces,
+.shadow {
+  -webkit-animation: spin 45s infinite linear;
+  animation: spin 45s infinite linear;
+}
+
+.cubeFaces {
+  position: relative;
+  width: 300px;
+  transform-style: preserve-3d;
+}
+
+.cubeFaceFront {
+  transform: translateZ(150px);
+  background-color: #3e526a;
+}
+
+.cubeFace {
+  outline: 1px solid #02203c;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  opacity: 0.75;
+  box-shadow: inset 0px 0px 100px #02203c;
+}
+
+.javaScriptLogo {
+  width: 100%;
+}
+
+.cubeFaceBack {
+  transform: translateZ(-150px) rotateY(180deg);
+  background-color: #3e526a;
+}
+
+.cubeFaceLeft {
+  transform: rotateY(270deg) translateX(-150px);
+  transform-origin: center left;
+  background-color: #3e526a;
+}
+
+.cubeFaceRight {
+  transform: rotateY(-270deg) translateX(150px);
+  transform-origin: top right;
+  background-color: #3e526a;
+}
+
+.cubeFaceTop {
+  transform: rotateX(-90deg) translateY(-150px);
+  transform-origin: top center;
+  background-color: #02203c;
+}
+
+.cubeFaceBottom {
+  transform: rotateX(90deg) translateY(150px);
+  transform-origin: bottom center;
+  background-color: #02203c;
+}
+
+.cppLogo {
+  height: 100%;
+  width: 100%;
+}
+
+.goLogo {
+  width: 100%;
+}
+
+.pythonLogo {
+  width: 100%;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
